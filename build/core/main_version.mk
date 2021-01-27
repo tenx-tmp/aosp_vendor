@@ -18,10 +18,11 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     persist.sys.recovery_update=true
 endif
 
-# Versioning props
-ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
+# Branding
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    org.tenx_version=$(TENX_BASE_VERSION) \
+    org.tenx.fanbase_name=$(TENX_FANBASE_NAME) \
+    org.tenx.version.display=$(TENX_VERSION) \
+    org.tenx.build_date=$(CUSTOM_BUILD_DATE) \
+    org.tenx.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.tenx.build_type=$(CUSTOM_BUILD_TYPE)

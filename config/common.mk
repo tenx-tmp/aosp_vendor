@@ -1,7 +1,7 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
 
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= TenX
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -200,6 +200,9 @@ $(call inherit-product, vendor/aosp/config/audio.mk)
 
 # Bootanimation
 $(call inherit-product, vendor/aosp/config/bootanimation.mk)
+
+# Branding
+$(call inherit-product, vendor/aosp/config/branding.mk)
 
 # Fonts
 $(call inherit-product, vendor/aosp/config/fonts.mk)
